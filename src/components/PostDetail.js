@@ -17,8 +17,8 @@ function PostDetail() {
             .then((snapshot) => {
                 // console.log(snapshot.data());
                 setPost(snapshot.data());
-            })
-    }, [])
+            });
+    }, [postId]);
 
     return (
         <div className="post-detail">
