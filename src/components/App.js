@@ -1,0 +1,19 @@
+// Switch is replaced by Routes, It is used to switch between different links
+import { Routes, Route } from "react-router-dom";
+import { Navbar, Home, CreatePost, PostDetail } from './';
+
+
+function App() {
+  return (
+    <div className="container">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={ <Home/> } />
+        <Route path="/post/:postId" element={ <PostDetail/> } />
+        <Route path="/create-post" element={ <CreatePost/> } />
+      </Routes>
+    </div>
+  );
+}
+
+export default App;

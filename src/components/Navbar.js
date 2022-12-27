@@ -1,0 +1,17 @@
+// Switch is replaced by Routes, It is used to switch between different links
+
+import { Link } from "react-router-dom";
+
+
+function Navbar() {
+    return (
+        <div>
+            <ul id="nav">
+                <li><Link to='/'>Home</Link></li>
+                <li><Link to='/create-post'>Create Post</Link></li>
+            </ul>
+        </div>
+    );
+}
+
+export default Navbar;
